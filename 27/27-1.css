@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+.bg-photo{
+    background-image: url(banner.jpg);
+    height: 500px;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 50px;
+}
+img{
+    width: 100%;
+}
+.hut{
+    background-image: url(the-hut-bg.png);
+    height: 300px;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+.hut .row{
+    height: 100%;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+.hut h2{
+    font-size: 3rem;
+}
+.teruroria{
+    background-image: url(the-area.png);
+    height: 300px;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+.teruroria .row{
+    height: 100%;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.397);
+}
+.teruroria h2{
+    font-size: 3rem;
+}
