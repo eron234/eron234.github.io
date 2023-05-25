@@ -1,0 +1,331 @@
+h1 {
+    text-align: center;
+}
+
+.left-panel {
+    background-color: darkslategrey;
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    transition: 0.8s;
+    z-index: 1000;
+}
+
+.btn-aside {
+    position: absolute;
+    left: 80%;
+    top: 15px;
+    transition: 0.8s;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.main-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 70px;
+}
+
+.main-menu li:hover {
+    box-shadow: inset 0 -7px 9px -7px rgba(0, 0, 0, 0.7);
+    font-weight: 900;
+}
+
+.main-menu a:hover {
+    color: aliceblue;
+}
+
+.main-menu a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.main-menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+.btn-out {
+    left: 100%;
+}
+
+.btn-out::after {
+    content: '\2630';
+    /*значок бургера */
+}
+
+.btn-hrest::after {
+    content: '\2715';
+    /*хрестик */
+}
+
+.hide-panel {
+    left: -220px;
+}
+
+.move-content {
+    margin-left: 220px;
+}
+
+.content {
+    transition: 0.8s;
+    /* background-image: url(gora2.jpg); */
+    height: 100vh;
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+}
+
+.col-md-8 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: right;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.svit {
+    width: 40%;
+}
+
+.ashka {
+    font-size: 3.3vh;
+}
+
+.dimka {
+    border-radius: 5%;
+    box-shadow: 0px -35px 20px 5px white;
+}
+
+.anim-card {
+    font-family: "Rubik", sans-serif;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    background-position: top center;
+    margin: 0;
+    transition: 1s;
+}
+
+/* .my-card-21 {
+    background-image: url(gora2.jpg);
+}
+
+.my-card-22 {
+    background-image: url(gora2.jpg);
+
+}
+
+.my-card-23 {
+    background-image: url(gora2.jpg);
+} */
+
+.content-card {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    transition: 1s;
+    z-index: 1;
+    color: white;
+    top: 60%;
+}
+
+.content-card .title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.anim-card:hover {
+    background-position: bottom center;
+}
+
+.anim-card:hover .content-card {
+    top: 10%;
+    color: white;
+}
+
+.fon {
+    background-image: url(temno.jpg);
+    background-size: cover;
+}
+
+.the-hut>.bg-image {
+    background-image: url();
+    background-position: 50% 50%;
+    background-size: cover;
+    color: white;
+    padding: 0;
+}
+
+.bg-image>.row {
+    background-color: rgba(0, 0, 0, 0.751);
+    margin: 0;
+}
+
+.ratio {
+    margin: 10px;
+    width: 100%;
+}
+.col-ms-4{
+    color: white;
+    align-items: center;
+    align-content: center;
+    text-align: right;
+}
+.ara{
+    margin: 20px;
+}
+.arow{
+    border-radius: 2vh;
+    border: 4px solid gray;
+
+}
+.arow2{
+    border-radius: 2vh;
+    border: 4px solid gray;
+}
+.arow3{
+    border-radius: 2vh;
+    border: 4px solid green;
+}
+.arow4{
+    border-radius: 2vh;
+    border: 4px solid green;
+}
+.pshka{
+    color: white;
+}
+.rowka{
+    padding: 10px;
+    border-radius: 2vh;
+    border: 4px solid gray;
+}
+.rowka2{
+    padding: 10px;
+    border-radius: 2vh;
+    border: 4px solid gray;
+}
+* {
+    box-sizing: border-box;
+}
+
+.long-slider {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    /* overflow: hidden; */
+    /* transform: translateX(); */
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.356);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    transition: 0.8s;
+    font-size: 4em;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(134, 131, 131, 0.658);
+
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.item-wrap {
+    /* position: absolute; */
+    display: flex;
+    height: 300px;
+    transition: 0.7s ease-out;
+    max-width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.slider-item {
+    /* width: 450px; */
+    margin-left: 10px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.item-wrap img {
+    height: 100%;
+}
+
+
+
+/* Works on Chrome, Edge, and Safari */
+
+.item-wrap::-webkit-scrollbar {
+    height: 4px;
+    /* висота/ширина скрола */
+}
+
+.item-wrap::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    /*смужка */
+}
+
+.item-wrap::-webkit-scrollbar-thumb {
+    /*те, що їздить */
+    background-color: rgb(218, 218, 218);
+    border-radius: 20px;
+    /* border: 3px solid rgb(163, 163, 163);  */
+}
+
+.item-wrap::-webkit-scrollbar-thumb:hover {
+    /*те, що їздить */
+    background-color: rgb(0, 0, 0);
+
+}
+
+/* Works on Firefox */
+.item-wrap {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+
+.pdoduct-card {
+    padding: 20px;
+    margin-left: 20px;
+    width: 300px;
+    background-color: rgb(228, 228, 228);
+    transition: 0.8s;
+}
+
+.pdoduct-card:hover {
+    transform: scale(1.1);
+    background-color: rgb(247, 244, 244);
+
+}
+
+.tel-btn {
+    font-size: 1.1rem;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.tel-btn:hover {
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
